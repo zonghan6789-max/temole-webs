@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>順安宮智慧導覽與管理系統</title>
+  <link rel="stylesheet" href="css/style.css/style.css" />
+</head>
+<body>
+  <!-- 頂部導覽列 -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">順安宮智慧導覽</div>
+      <nav class="nav-links">
+        <a href="#hero">首頁</a>
+        <a href="#about">宮廟介紹</a>
+        <a href="#flow">參拜流程</a>
+        <a href="#fortune">求籤專區</a>
+        <a href="#group">進香團 / 活動</a>
+        <a href="#stories">在地故事</a>
+        <a href="#contact">聯絡資訊</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首頁 Hero 區 -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>順安宮智慧導覽與管理系統</h1>
+        <p>
+          結合廟宇文化、在地故事與數位科技，為香客、進香團與管理者提供
+          清楚的參拜流程與便利的資訊服務。
+        </p>
+        <div class="hero-actions">
+          <a href="#flow" class="btn primary">我要參拜</a>
+          <a href="#fortune" class="btn secondary">我要求籤</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-card">
+          <h3>今日重點</h3>
+          <ul>
+            <li>◎ 今日法會時間：18:30</li>
+            <li>◎ 主祀神明：媽祖</li>
+            <li>◎ 建議參拜路線：天公爐 → 正殿 → 偏殿</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 宮廟與神明介紹 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">宮廟與神明介紹</h2>
+      <p class="section-intro">
+        簡單說明順安宮的歷史、為什麼蓋在這裡，以及主要神明與分靈故事。
+        之後可以改成從資料庫讀取。
+      </p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>順安宮緣起</h3>
+          <p>
+            範例文字：順安宮建於●●年間，為在地信仰中心，見證斗南地區的發展與變遷。
+          </p>
+        </article>
+        <article class="card">
+          <h3>主祀媽祖</h3>
+          <p>
+            範例文字：介紹媽祖的典故、保佑範圍，以及與地方漁民、居民的生活連結。
+          </p>
+        </article>
+        <article class="card">
+          <h3>分靈故事</h3>
+          <p>
+            範例文字：記錄不同分靈神像的由來與故事，後續可連接到「分靈形象資料庫」。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 參拜流程與路線導覽 -->
+  <section id="flow" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">參拜流程與路線導覽</h2>
+      <p class="section-intro">
+        針對第一次來的香客提供清楚步驟，也預留未來與 RFID / QRcode 導覽串接的空間。
+      </p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>一般香客參拜流程</h3>
+          <ol class="flow-list">
+            <li>到香客大廳／服務台了解今日活動</li>
+            <li>天公爐上香，向天公行禮</li>
+            <li>依建議路線到主殿、偏殿參拜</li>
+            <li>如需求籤，前往求籤區依指示操作</li>
+            <li>參拜完成後，可至在地故事區了解更多文化</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>進香團導覽路線（範例）</h3>
+          <ul>
+            <li>集合點與停車場位置說明</li>
+            <li>團體入廟、統一行禮流程</li>
+            <li>固定導覽動線（含講解點）</li>
+            <li>合照推薦位置與注意事項</li>
+          </ul>
+          <p class="hint">
+            未來可與後台「進香團管理」模組串接，自動產生本團專屬路線 QRcode。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 求籤專區 -->
+  <section id="fortune" class="section">
+    <div class="container">
+      <h2 class="section-title">求籤專區</h2>
+      <p class="section-intro">
+        保留傳統求籤儀式，同時提供線上查詢與解籤說明。AI 只作為輔助，不取代廟方人員。
+      </p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>求籤流程（儀式說明）</h3>
+          <ol class="flow-list">
+            <li>向神明稟報姓名、住址與需求</li>
+            <li>搖動籤筒，直到有一支籤落下</li>
+            <li>以筊杯確認該籤是否為神明指示</li>
+            <li>確認後，記下籤號或使用 RFID 籤筒讀取</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>線上解籤（示意）</h3>
+          <form class="fortune-form">
+            <label for="fortune-number">請輸入籤號：</label>
+            <input
+              type="number"
+              id="fortune-number"
+              name="fortune-number"
+              placeholder="例如：32"
+            />
+            <button type="button" class="btn primary">
+              查詢籤詩
+            </button>
+            <p class="hint">
+              之後這裡會與後台「籤詩資料庫」串接，顯示對應內容與建議。
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 進香團 / 活動專區 -->
+  <section id="group" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">進香團與活動專區</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>活動行事曆（範例區塊）</h3>
+          <ul>
+            <li>● 3/12 春季法會</li>
+            <li>● 4/08 遶境活動</li>
+            <li>● 5/01 在地文化導覽日</li>
+          </ul>
+          <p class="hint">
+            資訊組可提供 API，後台編輯後自動呈現在這裡。
+          </p>
+        </div>
+        <div class="card">
+          <h3>進香團資訊</h3>
+          <p>
+            提供團體預約方式、聯絡人與注意事項，之後可擴充為線上表單與後台管理。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 在地故事與文化 -->
+  <section id="stories" class="section">
+    <div class="container">
+      <h2 class="section-title">在地故事與文化</h2>
+      <p class="section-intro">
+        蒐集斗南在地故事、廟宇為何蓋在這裡的歷史，讓香客不只是「來拜拜」，而是理解整個地方。
+      </p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>廟宇與小鎮的關係</h3>
+          <p>範例：描述廟宇如何成為地方聚落的中心。</p>
+        </article>
+        <article class="card">
+          <h3>地方職人與故事</h3>
+          <p>範例：介紹與廟宇相關的店家、職人、工藝。</p>
+        </article>
+        <article class="card">
+          <h3>信仰與日常生活</h3>
+          <p>範例：在地居民如何在日常中與神明互動。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡資訊 -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">交通與聯絡資訊</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>交通 / 停車</h3>
+          <p>範例：公車、火車、自行開車的路線說明與停車場資訊。</p>
+        </div>
+        <div class="card">
+          <h3>聯絡方式</h3>
+          <p>電話、Email、粉專或 Line 官方帳號等。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 順安宮智慧導覽與管理系統（專題示意）</p>
+      <p class="footer-note">此網站為課程專題示範，非正式官方網站。</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
